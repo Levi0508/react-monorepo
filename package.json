@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "packageManager": "pnpm@9.11.0",
+  "scripts": {
+    "clean:sdk": "pnpm -r --filter=./packages/sdk* run clean",
+    "build:sdk": "pnpm -r --filter=./packages/sdk* run build",
+    "project:build:development": "pnpm clean:sdk && pnpm build:sdk && pnpm -r --filter=./packages/project* run build:development",
+    "project:build:testing": "pnpm clean:sdk && pnpm build:sdk && pnpm -r --filter=./packages/project* run build:testing",
+    "project:build:production": "pnpm clean:sdk && pnpm build:sdk && pnpm -r --filter=./packages/project* run build:production"
+  }
+}

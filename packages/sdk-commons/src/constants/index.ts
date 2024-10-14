@@ -1,0 +1,1 @@
+export const SERVER_BASE_API = 'VITE_SERVER_BASE_API'
