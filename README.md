@@ -1,3 +1,3 @@
-# react-monorepo-project-template
+# react-monorepo
 
 vite / react / typescript / pnpm
